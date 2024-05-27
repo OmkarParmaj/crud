@@ -6,7 +6,7 @@ import cors from 'cors'
 const app = express();
 
 app.use(cors({
-    origin: ['http://13.201.122.217'],
+    origin: ['http://www.textilediwanji.com'],
     methods: ["POST", "GET", "DELETE", "PATCH", "PUT"],
     credentials: true
 }));
@@ -15,7 +15,7 @@ app.use(express.json());
 const connection = mysql.createConnection({
     host : "localhost",
     user : "root",
-    password : "",
+    password : "omkar@8653",
     database : "crud"
 })
 
