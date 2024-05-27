@@ -13,7 +13,7 @@ const Edit = () => {
 
 
     useEffect(() =>{
-        axios.get('http://52.66.204.139:4000/read/'+id)
+        axios.get('http://www.textilediwanji.com:4000/read/'+id)
         .then(res => {
          console.log(res)
          setValues({...values, name:res.data[0].Name, email:res.data[0].Email})
@@ -27,7 +27,7 @@ const [values, setValues] = useState({
 })
 const handleUpdate = (event) => {
     event.preventDefault();
-     axios.put('http://52.66.204.139:4000/edit/' +id, values)
+     axios.put('http://www.textilediwanji.com:4000/edit/' +id, values)
      .then(res => {
         console.log(res)
         setUpdated(true);

@@ -10,7 +10,7 @@ const Read = () => {
     const [student, setStudent] = useState([])
 
     useEffect(() =>{
-       axios.get(`http://52.66.204.139:4000/read/${id}`)
+       axios.get(`http://www.textilediwanji.com:4000/read/${id}`)
        .then(res => {
         console.log(res)
         setStudent(res.data[0]);

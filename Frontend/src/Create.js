@@ -14,7 +14,7 @@ const Create = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://52.66.204.139:4000/student', values)
+        axios.post('http://www.textilediwanji.com:4000/student', values)
             .then(res => {
                 console.log(res);
                 setSubmitted(true); // Set submitted state to true upon successful submission

@@ -10,7 +10,7 @@ const Home = () => {
   }, []);
 
   const fetchData = () => {
-    axios.get('http://52.66.204.139:4000/')
+    axios.get('http://www.textilediwanji.com:4000/')
       .then(res => {
         setData(res.data);
         console.log(res);
@@ -19,7 +19,7 @@ const Home = () => {
   }
 
   const handleDelete = (id) => {
-    axios.delete('http://52.66.204.139:4000/delete/' + id)
+    axios.delete('http://www.textilediwanji.com:4000/delete/' + id)
       .then(res => {
         // Refresh data after successful deletion
         fetchData();
